@@ -6,7 +6,7 @@
 %define	pdir	DNS
 %define	pnam	Zone
 Summary:	DNS::Zone - DNS Zone
-#Summary(pl):	
+Summary(pl):	DNS::Zone - strefy DNS
 Name:		perl-DNS-Zone
 Version:	0.85
 Release:	1
@@ -21,12 +21,16 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-A zone has a name and can contain labels. You can dump() the zone use a
-standard format and you can use debug() to get an output from Data::Dumper
-that shows the object in detail including all referenced objects.
+A zone has a name and can contain labels. You can dump() the zone use
+a standard format and you can use debug() to get an output from
+Data::Dumper that shows the object in detail including all referenced
+objects.
 
-# %description -l pl
-# TODO
+%description -l pl
+Strefa ma nazwê i mo¿e zawieraæ etykiety. Mo¿na wykonaæ dump() na
+strefie u¿ywaj±c standardowego formatu albo wykonaæ debug(), aby
+uzyskaæ wyj¶cie z modu³u Data::Dumper pokazuj±ce szczegó³owo obiekt
+w³±cznie ze wszystkimi wskazywanymi przez niego obiektami.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
