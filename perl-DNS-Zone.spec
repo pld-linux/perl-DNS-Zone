@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define	pdir	DNS
 %define	pnam	Zone
+%include	/usr/lib/rpm/macros.perl
 Summary:	DNS::Zone - DNS zone
 Summary(pl.UTF-8):	DNS::Zone - strefy DNS
 Name:		perl-DNS-Zone
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	b04587b730dd2c2f3c533b7500edf1f8
+URL:		http://search.cpan.org/dist/DNS-Zone/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
