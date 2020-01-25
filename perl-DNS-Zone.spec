@@ -4,7 +4,6 @@
 
 %define	pdir	DNS
 %define	pnam	Zone
-%include	/usr/lib/rpm/macros.perl
 Summary:	DNS::Zone - DNS zone
 Summary(pl.UTF-8):	DNS::Zone - strefy DNS
 Name:		perl-DNS-Zone
